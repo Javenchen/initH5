@@ -1,16 +1,24 @@
 <template>
   <div class="Home">
-    {{msg}}
+    {{msg}}111
+    <FooterTab />
   </div>
+  
 </template>
 
 <script>
+// @ is an alias to /src
+import FooterTab from "@/components/FooterTab.vue";
+
 export default {
   name: "Home",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"
     };
+  },
+  components: {
+    FooterTab
   }
 };
 </script>
